@@ -22,10 +22,11 @@ spring:
 server:
   ssl:
     enabled: true
-    key-store: classpath:keystore.jks
-    key-store-password: camunda
-    key-password: camunda
-    key-store-type: JKS
+    key-store: classpath:springbootssm.p12
+    key-store-password: password
+    key-store-type: pkcs12
+    key-alias: springbootssm
+    key-password: password
 
 
 camunda.bpm.admin-user:

@@ -12,9 +12,9 @@
   </parent>
 
   <groupId>com.example.workflow</groupId>
-  <artifactId>Camunda_SSL_For_Loop</artifactId>
+  <artifactId>Camunda_SSL</artifactId>
   <version>1</version>
-  <name>camunda-ssl-for-loop</name>
+  <name>camunda-ssl</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

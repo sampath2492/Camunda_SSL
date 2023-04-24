@@ -35,10 +35,6 @@ public class TasksService {
 
     public Customer triggerCreateCustomer(Customer customer) {
 
-        int i=0;
-        while(i<1000){
-            i++;
-        }
         Customer createdCustomer = customerRepository.save(customer);
         TaskEntity task = (TaskEntity) taskService.createTaskQuery().taskId("create_customer").singleResult();
         createCustomer.notify(task);
@@ -47,10 +43,7 @@ public class TasksService {
 
     public void triggerSalesEvent(Long id) {
         Customer existingCustomer = customerRepository.findById(id).orElse(null);
-        int i=0;
-        while(i<1000){
-            i++;
-        }
+
         if (existingCustomer != null) {
             existingCustomer.setSalesStatus("Done");
             customerRepository.save(existingCustomer);
@@ -61,10 +54,7 @@ public class TasksService {
 
     public void triggerRmEvent(Long id) {
         Customer existingCustomer = customerRepository.findById(id).orElse(null);
-        int i=0;
-        while(i<1000){
-            i++;
-        }
+
         if (existingCustomer != null) {
             existingCustomer.setRmStatus("Done");
             customerRepository.save(existingCustomer);
@@ -75,10 +65,7 @@ public class TasksService {
 
     public void triggerDocEvent(Long id) {
         Customer existingCustomer = customerRepository.findById(id).orElse(null);
-        int i=0;
-        while(i<1000){
-            i++;
-        }
+
         if (existingCustomer != null) {
             existingCustomer.setDocStatus("Done");
             customerRepository.save(existingCustomer);
@@ -89,10 +76,7 @@ public class TasksService {
 
     public void triggerCreditEvent(Long id) {
         Customer existingCustomer = customerRepository.findById(id).orElse(null);
-        int i=0;
-        while(i<1000){
-            i++;
-        }
+
         if (existingCustomer != null) {
             existingCustomer.setCreditStatus("Done");
             customerRepository.save(existingCustomer);
@@ -103,10 +87,7 @@ public class TasksService {
 
     public void triggerSdcEvent(Long id) {
         Customer existingCustomer = customerRepository.findById(id).orElse(null);
-        int i=0;
-        while(i<1000){
-            i++;
-        }
+
         if (existingCustomer != null) {
             existingCustomer.setSdsStatus("Done");
             customerRepository.save(existingCustomer);
@@ -117,10 +98,7 @@ public class TasksService {
 
     public void triggerWelcomeEvent(Long id) {
         Customer existingCustomer = customerRepository.findById(id).orElse(null);
-        int i=0;
-        while(i<1000){
-            i++;
-        }
+
         if (existingCustomer != null) {
             existingCustomer.setWelcomeStatus("Done");
             customerRepository.save(existingCustomer);
