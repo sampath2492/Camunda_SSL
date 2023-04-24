@@ -1,0 +1,13 @@
+com\example\workflow\Configuration\CamundaConfiguration.class
+com\example\workflow\CreditEvent.class
+com\example\workflow\SdcEvent.class
+com\example\workflow\dto\Customer.class
+com\example\workflow\controller\TaskController.class
+com\example\workflow\RmEvent.class
+com\example\workflow\DocEvent.class
+com\example\workflow\service\TasksService.class
+com\example\workflow\Repository\CustomerRepository.class
+com\example\workflow\CreateCustomer.class
+com\example\workflow\WelcomeEvent.class
+com\example\workflow\Application.class
+com\example\workflow\SalesEvent.class
